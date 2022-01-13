@@ -1,0 +1,6 @@
+.App .fixed-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -9999;
+  background: #0E0E0F radial-gradient(var(--clr-bg-light), #0E0E0F);
+}
