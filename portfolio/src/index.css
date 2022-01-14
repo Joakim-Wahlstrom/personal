@@ -20,6 +20,18 @@ body {
   max-width: 540px;
   padding: 0 20px;
 }
+.padding-block-3 {
+  padding-block: 3rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.fs-150 {
+  font-size: 1.1rem;
+}
+.fs-200 {
+  font-size: 2rem;
+}
 .flex {
   display: flex;
   gap: var(--gap, 1rem)
@@ -41,6 +53,9 @@ body {
 .text-primary {
   color: var(--clr-primary);
 }
+.text-center {
+  text-align: center;
+}
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -52,7 +67,10 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   transition: background 100ms, color 100ms;
-
+  display: inline-block;
+}
+.btn-sm {
+  font-size: 1rem;
 }
 .btn-primary {
   border-color: var(--clr-primary);
@@ -61,7 +79,7 @@ body {
 .link-btn {
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--clr-primary);
   transition: color 100ms;

@@ -1,22 +1,30 @@
 import profile from '../../assets/img/Mebw.png'
-
+import smallProfile from '../../assets/img/Smallprofile2.png'
+import { Link } from 'react-router-dom'
+// import { useStorage } from '../../hooks/useStorage'
 const Hero = () => {
+
+  // const {downloadUrl} = useStorage();
+
   return (
-    <div className="flex">
-      <div className="text-header">
-        <h1 className="text-white">
-          <p>Hej,</p>
-          <p>Jag heter <span className="text-primary">Joakim</span>.</p>
-        </h1>
+    <>
+    <div className="hero flex">
+      <div className="text-header text-white">
+        <p>Hej,</p>
+        <p>Jag heter <span className="text-primary">Joakim</span>.</p>
         <div className="buttons">
-          <button className="btn btn-primary">kontakta mig</button>
-          <a href="Jw_logo.png" className="link-btn" download><i className="fas fa-download"></i> ladda ner cv</a>
+          <Link className="btn btn-primary" to="/contact">kontakta mig</Link>
+          <a href="CV_Joakim_Wahlstrom.pdf" className="link-btn" download><i className="fas fa-download"></i> ladda ner cv</a>
         </div>
       </div>
       <div className="img-container">
         <img className="img-fluid" src={profile} alt="" />
       </div>
     </div>
+    <div className="small-img-container">
+      <img className="img-fluid" src={smallProfile} alt="" />
+    </div>
+    </>
   )
 }
 

@@ -1,7 +1,8 @@
 :root {
-  --clr-bg-light: #45444C;
+  --clr-bg-light: #343338;
   --clr-bg-dark: #0E0E0F;
-  --clr-primary: #cda832;
+  --clr-primary: #D4AA22;
+  /* --clr-primary: #cda832; */
   --clr-text: #fff;
-  --clr-text-hover: #9b9b9b;
+  --clr-text-hover: #D4AA22;
 }

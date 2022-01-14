@@ -1,0 +1,21 @@
+.footer {
+  color: #858585;
+}
+.footer .flex {
+  justify-content: space-between;
+}
+.footer .ext-link {
+  font-size: 1.2rem;
+  align-self: flex-end;
+  color: #858585;
+  text-decoration: none;
+}
+.footer .facebook:hover {
+  color: #4267B2;
+}
+.footer .instagram:hover {
+  color: #bc2a8d;
+}
+.footer .linkedin:hover {
+  color: #0077b5;
+}

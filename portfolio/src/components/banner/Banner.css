@@ -1,0 +1,30 @@
+.banner {
+  background: #343338e3;
+  border-left: 10px solid var(--clr-primary);
+  position: relative;
+  z-index: 1000;
+}
+.banner h1 {
+  padding: 3rem;
+  font-size: 2.5rem;
+}
+.dark {
+  background: var(--clr-bg-dark);
+  border-left: 0;
+}
+@supports(backdrop-filter: blur(1rem)) {
+  .banner {  
+    background: hsla(0, 0%, 100%, var(--opacity));
+    backdrop-filter: blur(var(--blur));
+  }
+  .dark {
+    background: var(--clr-bg-dark);
+    backdrop-filter: blur(var(1rem));
+  }
+}
+
+@media (min-width: 768px) {
+  .banner h1 {
+    font-size: 3rem;
+  }
+}

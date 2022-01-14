@@ -42,7 +42,7 @@ const Navbar = ({hasScrolled}) => {
   const [isMobile, setIsMobile] = useState(false)
 
   return (
-    // <div id='navbar-wrapper' className="navbar-wrapper" onClick={handleClick}>
+
       <div className="navbar flex">
         <Logotype />
 
@@ -53,16 +53,20 @@ const Navbar = ({hasScrolled}) => {
           { openMenu && <i className="fas fa-times"></i> }
         </button>
 
-          {isMobile && 
-            <CSSTransition in={openMenu} timeout={500} classNames="menu-primary" unmountOnExit>
-              <PrimaryNav /> 
-            </CSSTransition>
+          {isMobile &&
+            <>
+              <CSSTransition in={openMenu} timeout={500} classNames="menu-primary" unmountOnExit>
+                <PrimaryNav />
+              </CSSTransition>
+              {openMenu && <div className="outer-area" onClick={() => setOpenMenu(false)}></div> }
+              
+            </>
           }
 
           {!isMobile && <PrimaryNav hasScrolled={hasScrolled} />}
 
       </div>
-    // </div>
+
   )
 }
 

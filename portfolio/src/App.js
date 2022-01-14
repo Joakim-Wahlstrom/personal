@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import './App.css';
+import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './views/About/About';
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false)
+  const [offsetY, setOffsetY] = useState(0)
 
   const handleScroll = () => {
-    // console.log(window.scrollY)
+    setOffsetY(window.scrollY)
     if(window.scrollY > 600) {
       setHasScrolled(true)
     } else if(window.scrollY <= 600) {
@@ -24,11 +26,12 @@ function App() {
 
   return (
     <div className="App">
-      <div aria-hidden="true" className="fixed-bg"></div>
       <Navbar hasScrolled={hasScrolled} />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<About offsetY={offsetY} />} />
       </Routes>
+      <Footer />
+      <div aria-hidden="true" className="fixed-bg"></div>
     </div>
   );
 }
