@@ -3,9 +3,6 @@ import './Navbar.css'
 import Logotype from '../../components/logotype/Logotype';
 import PrimaryNav from './PrimaryNav';
 import { CSSTransition } from 'react-transition-group'
-import SmallNav from './SmallNav';
-
-// import { NavLink } from "react-router-dom"
 
 const Navbar = ({hasScrolled}) => {
 
@@ -46,7 +43,7 @@ const Navbar = ({hasScrolled}) => {
       <div className="navbar flex">
         <Logotype />
 
-        <button aria-controls='primary-navigation' aria-expanded="false" className='nav-toggle'
+        <button aria-controls='primary-navigation' aria-expanded="false" aria-label='navigation-toggle' className='nav-toggle'
         onClick={() => setOpenMenu(!openMenu)}>
           <span className="sr-only">Menu</span>
           { !openMenu && <i className="fas fa-bars"></i> }

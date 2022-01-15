@@ -1,5 +1,5 @@
-import profile from '../../assets/img/Mebw.png'
-import smallProfile from '../../assets/img/Smallprofile2.png'
+import profile from '../../assets/img/Mebw.webp'
+import smallProfile from '../../assets/img/Smallprofile2.webp'
 import { Link } from 'react-router-dom'
 // import { useStorage } from '../../hooks/useStorage'
 const Hero = () => {

@@ -1,4 +1,4 @@
-import family from '../../../assets/img/family2.png'
+import family from '../../../assets/img/family2.webp'
 import './Info.css'
 const Info = () => {
   return (

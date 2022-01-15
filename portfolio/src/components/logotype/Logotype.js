@@ -1,5 +1,5 @@
 import './Logotype.css'
-import logo from '../../assets/img/Jw_logo.png'
+import logo from '../../assets/img/Jw_logo.webp'
 const Logotype = (props) => {
   return (
   <div className="logotype">

@@ -18,9 +18,9 @@ const Footer = () => {
             <p>Designat av mig och skapat med React</p>
           </div>
           <div className="links flex">
-            <a className="ext-link facebook" href="https://www.facebook.com/joakim.wahlstrom.75" target="_blank"><i className="fab fa-facebook-f"></i></a>
-            <a className="ext-link instagram" href="https://www.instagram.com/isedor/" target="_blank"><i className="fab fa-instagram"></i></a>
-            <a className="ext-link linkedin" href="https://www.linkedin.com/in/joakim-wahlstr%C3%B6m-556302188/" target="_blank"><i className="fab fa-linkedin"></i></a>
+            <a className="ext-link facebook" href="https://www.facebook.com/joakim.wahlstrom.75" target="_blank"><span className='sr-only'>my facebook</span><i className="fab fa-facebook-f"></i></a>
+            <a className="ext-link instagram" href="https://www.instagram.com/isedor/" target="_blank"><span className='sr-only'>my instagram</span><i className="fab fa-instagram"></i></a>
+            <a className="ext-link linkedin" href="https://www.linkedin.com/in/joakim-wahlstr%C3%B6m-556302188/" target="_blank"><span className='sr-only'>my linkedin</span><i className="fab fa-linkedin"></i></a>
           </div>
         </div>
       </Banner>
