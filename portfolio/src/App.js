@@ -4,6 +4,8 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import Navbar from './components/navbar/Navbar';
 import About from './views/About/About';
+import Contact from './views/Contact/Contact';
+import NotFound from './views/NotFound/NotFound';
 
 function App() {
   const [hasScrolled, setHasScrolled] = useState(false)
@@ -29,6 +31,9 @@ function App() {
       <Navbar hasScrolled={hasScrolled} />
       <Routes>
         <Route path="/" element={<About offsetY={offsetY} />} />
+        <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
       <div aria-hidden="true" className="fixed-bg"></div>

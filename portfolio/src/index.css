@@ -13,6 +13,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
+  background: #0E0E0F radial-gradient(var(--clr-bg-light), #0E0E0F);
 }
 .container {
   margin: 0 auto;
@@ -31,6 +32,9 @@ body {
 }
 .fs-200 {
   font-size: 2rem;
+}
+.fs-300 {
+  font-size: 2.5rem;
 }
 .flex {
   display: flex;
