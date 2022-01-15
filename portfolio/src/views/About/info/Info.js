@@ -10,7 +10,7 @@ const Info = () => {
         </p>
         <p className="text-white text-line">
           <i className="icon fas fa-phone-alt text-primary"></i>
-          <span>+46701 46 97 96</span>
+          <span>+46 701 469 796</span>
         </p>
         <p className="text-white text-line">
           <i className="icon fas fa-envelope text-primary"></i>

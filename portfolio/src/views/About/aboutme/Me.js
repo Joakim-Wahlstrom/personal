@@ -20,9 +20,10 @@ const Me = ({offsetY}) => {
     <div className="me flex">
       <div className="me-text">
         <p className="text-white">
-          Jag är en målmedveten kille på {myAge} år som bor inne i västerås med min fru och våra barn.
-          Dom senaste åren har jag jobbat som IT-konsult och utbildare inom IT, UX design och Agila arbetsmetoder så som Scrum och Kanban.
-          Jag är en person som ser lösningar framför problem och har ett pedagogiskt sätt att förmedla information och hjälpa andra att utvecklas
+          Målmedveten, driven och professionell IT-konsult på {myAge} år som bor inne i Västerås med min fru och våra barn. 
+          Dom senaste åren har jag jobbat med utveckling och som utbildare inom IT, UX design och Agila arbetsmetoder så som Scrum och Kanban.
+          Jag ser utmaningar som en möjlighet till utveckling, har ett högt lösningsfokus och ett pedagogiskt sätt att 
+          förmedla information och hjälpa andra att utvecklas. 
         </p>
       </div>
       <div className="me-boxes">

@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
-  background: #0E0E0F radial-gradient(var(--clr-bg-light), #0E0E0F);
+  background: #19191b;
 }
 .container {
   margin: 0 auto;

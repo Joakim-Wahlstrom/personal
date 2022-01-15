@@ -44,10 +44,14 @@ const Skills = () => {
           <div className='skills-list-flex flex'>
             <List>
               <li>Kommunikation</li>
-              <li>Motivera andra</li>
-              <li>Problemlösning</li>
+              <li>Coaching</li>
+              <li>Strategisk planering</li>
               <li>Agila arbetsmetoder</li>
-              <li>Administrativt arbete</li>
+              <li>Leda på distans</li>
+            </List>
+            <List>
+              <li>Ekonomistyrning</li>
+              <li>Systematiskt miljöarbete</li>
             </List>
           </div>
         }
