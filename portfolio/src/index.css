@@ -24,8 +24,14 @@ body {
 .padding-block-3 {
   padding-block: 3rem;
 }
+.margin-block-2 {
+  margin-block: 2rem;
+}
 .mb-1 {
   margin-bottom: 1rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
 }
 .fs-150 {
   font-size: 1.1rem;

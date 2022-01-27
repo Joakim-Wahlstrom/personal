@@ -1,0 +1,57 @@
+.contact-cards {
+  margin-top: 3rem;
+  flex-direction: column;
+}
+.contact-cards .card {
+  display: flex;
+  align-items: center;
+}
+.contact-cards .fas {
+  font-size: 1.5rem;
+}
+.contact-cards .fas-container {
+  margin-right: 1rem;
+  min-width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-cards .head {
+  display: none;
+}
+.contact-cards .text {
+  font-size: .9rem;
+}
+
+@media (min-width: 526px) {
+  .contact-cards .fas {
+    font-size: 1.7rem;
+  }
+  .contact-cards .text {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact-cards {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .contact-cards .head {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  .contact-cards .line {
+    width: 2px;
+    height: 150px;
+    background-color: var(--clr-primary);
+  }
+  .contact-cards .fas-container {
+    margin: 1rem 0;
+  }
+  .contact-cards .card {
+    flex: 1;
+    display: block;
+    text-align: center;
+  }
+}
