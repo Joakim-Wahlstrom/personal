@@ -22,7 +22,7 @@ const Education = () => {
       </div>
       <div className="chunk">
         <div className="left">
-          <div className="card" data-aos="fade-right" data-aos-offset="445">
+          <div className="card" data-aos="fade-right" data-aos-offset="545">
             <h2 className='text-primary'>GRUNDERNA I DIGITAL MARKNADSFÖRING</h2>
             <p className='company'>Google Digitalakademin | 2020</p>
             <p className='desc'>
@@ -31,12 +31,12 @@ const Education = () => {
             <p className='desc-small'>certifikat id: <span className="text-primary">BZJ 47K UMY</span></p>
           </div>
         </div>
-        <div className="center" data-aos="fade-up" data-aos-offset="461">
+        <div className="center" data-aos="fade-up" data-aos-offset="561">
           <div className="ball"></div>  
           <div className="line"></div>
         </div>
         <div className="left-small">
-          <div className="card" data-aos="fade-left">
+          <div className="card" data-aos="fade-left" data-aos-offset="545">
             <h2 className='text-primary'>GRUNDERNA I DIGITAL MARKNADSFÖRING</h2>
             <p className='company'>Google Digitalakademin | 2020</p>
             <p className='desc'>
@@ -50,12 +50,12 @@ const Education = () => {
       </div>
       <div className="chunk">
         <div className="left"></div>
-        <div className="center" data-aos="fade-up" data-aos-offset="461">
+        <div className="center" data-aos="fade-up" data-aos-offset="526">
           <div className="ball"></div>  
           <div className="line"></div>
         </div>
         <div className="right">
-          <div className="card" data-aos="fade-left" data-aos-offset="445">
+          <div className="card" data-aos="fade-left" data-aos-offset="510">
             <h2 className='text-primary'>SPECIALUTFORMAT PROGRAM IT-ELEKTRONIK-NATURVETENSKAP</h2>
             <p className='company'>IT-Gymnasiet | 2003 - 2006</p>
             <p className='desc'>

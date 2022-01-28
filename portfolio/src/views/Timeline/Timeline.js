@@ -12,7 +12,7 @@ const Timeline = ({smallScroll}) => {
 
   useEffect(() => {
     aos.init({
-      duration: 1500
+      duration: 1500,
     })
   }, [])
 
