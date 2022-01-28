@@ -66,6 +66,9 @@ body {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .btn {
   text-transform: uppercase;
   text-decoration: none;
@@ -105,8 +108,7 @@ body {
 .btn-primary:active {
   filter: brightness(0.9);
 }
-.btn-primary:hover, 
-.btn-primary:focus {
+.btn-primary:hover{
   background: var(--clr-primary);
   color: var(--clr-text);
 }

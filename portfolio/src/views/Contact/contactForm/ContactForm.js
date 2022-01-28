@@ -15,6 +15,7 @@ const ContactForm = () => {
   const [emailError, setEmailError] = useState('');
   const [subjectError, setSubjectError] = useState('');
   const [messageError, setMessageError] = useState('');
+  const [showThanks, setShowThanks] = useState(false);
 
   const validate = () => {
     const errors = []
@@ -60,6 +61,7 @@ const ContactForm = () => {
           setEmail('')
           setSubject('')
           setMessage('')
+          setShowThanks(true)
       }, (error) => {
           console.log(error.text);
       });
@@ -69,6 +71,7 @@ const ContactForm = () => {
 
   return (
   <form className='contact-form text-center' ref={form} onSubmit={handleSubmit}>
+    {showThanks && <p className="text-primary fs-200">Tack för ditt meddelande</p>}
     <div className="group">
       <input type="text" className="form-input" placeholder='Ditt Namn' name="name" value={name} onChange={e => setName(e.target.value)} />
       <p className="error">{nameError}</p>
