@@ -1,19 +1,19 @@
 import { NavLink } from "react-router-dom"
 
-const PrimaryNav = ({hasScrolled}) => {
+const PrimaryNav = ({hasScrolled, closeMenu}) => {
   return (
       <ul id="primary-navigation" className={"primary-navigation flex " + (hasScrolled ? 'small' : 'big')}>
         <li>
-          <NavLink to="/" className='nav-link'>OM MIG</NavLink>
+          <NavLink to="/" className='nav-link' onClick={closeMenu} >OM MIG</NavLink>
         </li>
         <li>
-          <NavLink to="/timeline" className='nav-link'>TIDSLINJE</NavLink>
+          <NavLink to="/timeline" className='nav-link' onClick={closeMenu} >TIDSLINJE</NavLink>
         </li>
         <li>
-          <NavLink to="/portfolio" className='nav-link'>PORTFOLIO</NavLink>
+          <NavLink to="/portfolio" className='nav-link' onClick={closeMenu} >PORTFOLIO</NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className='nav-link '>KONTAKT</NavLink>
+          <NavLink to="/contact" className='nav-link ' onClick={closeMenu} >KONTAKT</NavLink>
         </li>
       </ul>
   )

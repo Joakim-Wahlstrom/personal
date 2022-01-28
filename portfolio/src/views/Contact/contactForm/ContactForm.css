@@ -2,12 +2,14 @@
   max-width: 750px;
   margin: auto;
 }
+.contact-form .group {
+  margin-block: 1rem;
+}
 .contact-form .form-input {
   display: block;
   width: 100%;
   background-color: var(--clr-form-input);
   border: 0;
-  margin-block: 1rem;
   padding: 1rem;
   color: #fff;
 }
@@ -18,6 +20,11 @@
 .contact-form .form-textarea {
   resize: none;
   overflow: auto;
+}
+.contact-form .error {
+  color: var(--clr-form-error);
+  font-size: .8rem;
+  text-align: left;
 }
 .contact-form .form-textarea::-webkit-scrollbar {
   width: .5rem;

@@ -29,10 +29,8 @@ const Navbar = ({hasScrolled}) => {
     }
   }
 
-  const handleClick = e => {
-    if(e.target.id === 'navbar-wrapper'){
-      setOpenMenu(false)
-    }
+  const closeMenu = () => {
+    setOpenMenu(false)
   }
 
   const [openMenu, setOpenMenu] = useState(false)
@@ -53,7 +51,7 @@ const Navbar = ({hasScrolled}) => {
           {isMobile &&
             <>
               <CSSTransition in={openMenu} timeout={500} classNames="menu-primary" unmountOnExit>
-                <PrimaryNav />
+                <PrimaryNav closeMenu={closeMenu} />
               </CSSTransition>
               {openMenu && <div className="outer-area" onClick={() => setOpenMenu(false)}></div> }
               
